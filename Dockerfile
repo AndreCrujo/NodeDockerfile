@@ -14,11 +14,13 @@ RUN \
  
 RUN \
   cd /home
-  
+
+ENTRYPOINT ["/gitLogin.sh"]  
+
 #RUN git clone https://github.com/AntonioJFSousa/Trading.git
 
 #go to your project
 #RUN \
 #  cd /Trading/ui_angular_trading
 
-CMD [ "node", "appLocal.js" ]
+#CMD [ "node", "appLocal.js" ]
