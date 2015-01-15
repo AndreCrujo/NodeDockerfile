@@ -15,7 +15,7 @@ RUN \
 RUN \
   cd /home
 
-ENTRYPOINT ["/gitLogin.sh"]  
+ENTRYPOINT ["~/gitLogin.sh"]  
 
 #RUN git clone https://github.com/AntonioJFSousa/Trading.git
 
