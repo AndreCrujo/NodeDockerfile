@@ -15,7 +15,7 @@ RUN \
 RUN \
   cd /home
 
-ENTRYPOINT ["~/gitLogin.sh"]
+ENTRYPOINT ["~/docker/NodeDockerfile/gitLogin.sh"]
 CMD ["/bin/bash"]  
 
 #RUN git clone https://github.com/AntonioJFSousa/Trading.git
