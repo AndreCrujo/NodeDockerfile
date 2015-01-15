@@ -15,13 +15,13 @@ RUN \
 RUN \
   cd /home
 
-RUN ["chown", "-R", "daemon", "."]
+#RUN ["chown", "-R", "daemon", "."]
 # Make sure myApp is excutable
-RUN ["chmod", "+x", "bin/myApp"]
-USER daemon
+#RUN ["chmod", "+x", "bin/myApp"]
+#USER daemon
 
-COPY gitLogin.sh gitLogin.sh
-ENTRYPOINT ["gitLogin.sh"]
+COPY ./gitLogin.sh /
+ENTRYPOINT ["/gitLogin.sh"]
 
 CMD ["/bin/bash"]  
 
