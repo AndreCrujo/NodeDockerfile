@@ -21,7 +21,7 @@ RUN \
 #USER daemon
 
 COPY ./gitLogin.sh /
-ENTRYPOINT ["/gitLogin.sh"]
+ENTRYPOINT ["./gitLogin.sh"]
 
 CMD ["/bin/bash"]  
 
