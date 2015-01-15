@@ -15,7 +15,7 @@ RUN \
 RUN \
   cd /home
   
-RUN git clone https://git@github.com:AntonioJFSousa/Trading.git
+RUN git clone https://github.com/AntonioJFSousa/Trading.git
 
 #go to your project
 RUN \
