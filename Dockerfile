@@ -15,8 +15,12 @@ RUN \
 RUN \
   cd /home
 
- COPY ./gitLogin.sh /
+RUN ["chown", "-R", "daemon", "."]
+USER daemon
+  
+COPY ./gitLogin.sh /
 ENTRYPOINT ["/gitLogin.sh"]
+
 CMD ["/bin/bash"]  
 
 #RUN git clone https://github.com/AntonioJFSousa/Trading.git
