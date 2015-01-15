@@ -1,10 +1,7 @@
 FROM ubuntu:14.04
 
-
 RUN apt-get update
 RUN apt-get install -y wget git npm
-
-
 
 # Install Node.js
 RUN \
@@ -14,21 +11,14 @@ RUN \
   rm -f node-v0.10.29-linux-x64.tar.gz && \
   cd node-v0.10.29-linux-x64 && \
   echo -e '\n# Node.js\nexport PATH="/tmp/node-v0.10.29-linux-x64/bin:$PATH"' >> /root/.bashrc
-  
-
-
+ 
 RUN \
   cd /home
 
-
 RUN git clone git@github.com:AntonioJFSousa/Trading.git
-
-
 
 #go to your project
 RUN \
-  cd /Trading/utrade
+  cd /Trading/ui_angular_trading
 
-
-
-CMD [ "node", "utrade.js" ]
+CMD [ "node", "appLocal.js" ]
