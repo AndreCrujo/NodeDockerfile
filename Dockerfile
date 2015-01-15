@@ -32,4 +32,6 @@ CMD ["/bin/bash"]
 #RUN \
 #  cd /Trading/ui_angular_trading
 
+EXPOSE 3001
+
 #CMD [ "node", "appLocal.js" ]
