@@ -20,8 +20,8 @@ RUN \
 #RUN ["chmod", "+x", "bin/myApp"]
 #USER daemon
 
-COPY ./gitLogin.sh /
-ENTRYPOINT ["./gitLogin.sh"]
+COPY ./git-login.sh /
+ENTRYPOINT ["/git-login.sh.sh"]
 
 CMD ["/bin/bash"]  
 
