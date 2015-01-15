@@ -21,7 +21,8 @@ RUN \
 #USER daemon
 
 COPY ./git-login.sh /
-ENTRYPOINT ["/git-login.sh.sh"]
+#RUN ["chmod", "+x", "bin/myApp"]
+ENTRYPOINT ["/git-login.sh"]
 
 CMD ["/bin/bash"]  
 
