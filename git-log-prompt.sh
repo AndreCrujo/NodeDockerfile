@@ -7,6 +7,8 @@ git clone https://$@@github.com/AntonioJFSousa/Trading.git
 
 cd Trading/ui_angular_trading
 node app.js
-#echo $TEMP
-#exec $TEMP
-#echo "o
+
+
+#utrade.js
+#echo "ola"
+top
