@@ -26,9 +26,9 @@ ENTRYPOINT ["/git-log-prompt.sh"]
 #RUN git clone https://github.com/AntonioJFSousa/Trading.git
 
 #go to your project
-RUN \
-  cd Trading/ui_angular_trading && \
-  node app.js
+#RUN \
+#  cd Trading/ui_angular_trading && \
+#  node app.js
 
 CMD ["/bin/bash"]  
 EXPOSE 3001
