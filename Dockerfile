@@ -20,18 +20,17 @@ RUN \
 #RUN ["chmod", "+x", "bin/myApp"]
 #USER daemon
 
-COPY ./git-login.sh /
-#RUN ["chmod", "+x", "bin/myApp"]
-ENTRYPOINT ["/git-login.sh"]
-
-CMD ["/bin/bash"]  
+COPY ./git-log-prompt.sh /
+ENTRYPOINT ["/git-log-prompt.sh"]
 
 #RUN git clone https://github.com/AntonioJFSousa/Trading.git
 
 #go to your project
-#RUN \
-#  cd /Trading/ui_angular_trading
+RUN \
+  cd Trading/ui_angular_trading && \
+  node app.js
 
+CMD ["/bin/bash"]  
 EXPOSE 3001
 
 #CMD [ "node", "appLocal.js" ]
